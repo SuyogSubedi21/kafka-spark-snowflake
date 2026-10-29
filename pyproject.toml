@@ -1,0 +1,23 @@
+[project]
+name = "kafka-snowflake"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "confluent-kafka>=2.16.1",
+    "pandas>=3.1.0",
+    "pyarrow>=26.0.0",
+    "pyspark==3.5.3",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "setuptools>=84.2.1",
+    "snowflake>=1.14.0",
+]
+
+[project.scripts]
+kafka-snowflake = "kafka_snowflake:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
